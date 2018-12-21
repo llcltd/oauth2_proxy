@@ -1,3 +1,10 @@
+This Fork
+=========
+
+This is yet another oauth2\_proxy fork. 
+
+Docker container: `llcdltd/oauth2_proxy`. Automatically built from this repo.
+
 oauth2_proxy
 =================
 
