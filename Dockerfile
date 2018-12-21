@@ -20,5 +20,9 @@ RUN set -e -x ;\
     go install github.com/bitly/oauth2_proxy
 
 FROM ubuntu:18.04
+RUN set -e -x ;\
+    apt-get -y update ;\
+    apt-get -y upfrade ;\
+    apt-get -y install ca-certificates
 COPY --from=0 /go/bin/oauth2_proxy /usr/bin/oauth2_proxy
 CMD ["oauth2_proxy"]
